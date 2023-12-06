@@ -1,4 +1,5 @@
 <script>
+	import About from "./components/About.svelte";
 	export let name;
 	export let lastName;
 	let svelteLogo = "https://miro.medium.com/v2/resize:fit:1400/1*G9fzmaoymDGy7scbkgpC7A.png";
@@ -15,10 +16,6 @@
 		--theme-color: purple;
 	}
 
-	p {
-		color: var(--theme-color);
-		font-size: 30px;
-	}
 	.logo {
 		height: 250px;
 	}
@@ -45,6 +42,6 @@
 
 <main>
 	<h1>Hello {name} {lastName}!</h1>
-	<p>Frontend developer!</p>
+	<About/>
 	<img class="logo" src={svelteLogo} alt="svelte-logo"/>
 </main>
