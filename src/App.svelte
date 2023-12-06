@@ -1,8 +1,16 @@
 <script>
 	import About from "./components/About.svelte";
+	import Text from "./components/Text.svelte";
+	import Person from "./components/Person.svelte";
 	export let name;
 	export let lastName;
 	let svelteLogo = "https://miro.medium.com/v2/resize:fit:1400/1*G9fzmaoymDGy7scbkgpC7A.png";
+
+	const data = {
+		name: 'jorge',
+		lastName: 'Del Toro',
+		age: 21
+	};
 </script>
 
 <style>
@@ -43,5 +51,8 @@
 <main>
 	<h1>Hello {name} {lastName}!</h1>
 	<About/>
+	<Text anotherText="Hola mundo"/> <!--Pasando el valor-->
+	<Text /> <!--valor por defecto-->
+	<Person {...data}/> <!--Pasando un objeto por propagacion-->
 	<img class="logo" src={svelteLogo} alt="svelte-logo"/>
 </main>
