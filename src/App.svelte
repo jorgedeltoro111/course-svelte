@@ -24,6 +24,10 @@
 		--theme-color: purple;
 	}
 
+	:global(body.dark-mode){
+		background-color: #1d3040;
+		color: #bfc2c7;
+	}
 	.logo {
 		height: 250px;
 	}
@@ -51,8 +55,8 @@
 <main>
 	<h1>Hello {name} {lastName}!</h1>
 	<About/>
-	<Text anotherText="Hola mundo"/> <!--Pasando el valor-->
-	<Text /> <!--valor por defecto-->
-	<Person {...data}/> <!--Pasando un objeto por propagacion-->
+	<Text anotherText="Hola mundo"/> <!--Using a value-->
+	<Text /> <!--default value-->
+	<Person {...data}/> <!--Propagation-->
 	<img class="logo" src={svelteLogo} alt="svelte-logo"/>
 </main>
