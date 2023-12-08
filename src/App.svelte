@@ -1,4 +1,5 @@
 <script>
+	import Photos from "./components/Photos.svelte";
 	import About from "./components/About.svelte";
 	import Text from "./components/Text.svelte";
 	import Person from "./components/Person.svelte";
@@ -62,5 +63,6 @@
 	<Person {...data}/> <!--Propagation-->
 	<Skills/>
 	<Input/>
+	<Photos/>
 	<img class="logo" src={svelteLogo} alt="svelte-logo"/>
 </main>
