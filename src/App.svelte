@@ -3,6 +3,7 @@
 	import Text from "./components/Text.svelte";
 	import Person from "./components/Person.svelte";
 	import Skills from "./components/Skills.svelte";
+	import Input from "./components/Input.svelte";
 	export let name;
 	export let lastName;
 	let svelteLogo = "https://miro.medium.com/v2/resize:fit:1400/1*G9fzmaoymDGy7scbkgpC7A.png";
@@ -60,5 +61,6 @@
 	<Text /> <!--default value-->
 	<Person {...data}/> <!--Propagation-->
 	<Skills/>
+	<Input/>
 	<img class="logo" src={svelteLogo} alt="svelte-logo"/>
 </main>
